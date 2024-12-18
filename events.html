@@ -28,22 +28,24 @@
       
         <h2 id="kod">Kod Exempel</h2>
         <p>Det finns några olika sätt att skriva koden som hanterar events, men jag tror den du kommer se mest ser ut så här:</p>
-        <code>let myButton = document.getElementById("myButton");
-           <br> function knappFunktion(){
-           <br>     console.log("Någon tryckte på knappen");
-        <br>}
-            <br>myButton.addEventListener("click", knappFunktion);
-        </code>
+        <pre>
+let myButton = document.getElementById("myButton");
+function knappFunktion(){
+    console.log("Någon tryckte på knappen");
+}
+myButton.addEventListener("click", knappFunktion);
+</pre>
         <p>I denna kod så skapar vi en variabel som håller en html button med id "myButton". Vi använder en funktion som heter addEventListener(), denna funktion säger till javascript att den ska kolla efter ett event på detta html element. Den parameter denna funktion behöver är vilken typ av event den ska kolla efter och en funktion som ska köras när det händer. 
         </p>
         <p>
         I detta exempel så har vi skapat en funktion tidigare som heter knappFunktion och det är den som kommer köras, det finns ett annat sätt att skriva detta om du inte redan har en funktion:
         </p>
-        <code>let myButton = document.getElementById("myButton");
-           <br> myButton.addEventListener("click", new function(){
-           <br>    console.log("Någon tryckte på knappen");
-           <br> });
-        </code>
+        <pre>
+let myButton = document.getElementById("myButton");
+myButton.addEventListener("click", new function(){
+    console.log("Någon tryckte på knappen");
+});
+</pre>
         <p>Denna kod kommer att göra exakt samma sak men vi skapar en funktion utan ett namn som bara används för just detta. Detta sättet att skriva är ganska vanligt.</p>
         <p>Det går också att göra samma sak men att göra det i ditt html element, det ser ut så här:</p>
         <code>&#60;button onclick="KnappFunktion()">Klicka mig&#60;/button></code>
@@ -73,17 +75,7 @@
         <div id="output"></div>
     </main>
     <br>
-    <nav>
-        <a href="intro.html">Intro</a> 
-        <a href="variablar.html">Variablar</a> 
-        <a href="funktioner.html">Funktioner</a> 
-        <a href="integer.html">Integer</a>
-        <a href="string.html">String</a>
-        <a href="if-else.html">If Else</a>
-        <a href="loops.html">Loops</a>
-        <a href="html.html">HTML</a>
-        <a href="events.html">Events</a>
-      </nav>
+    <div id="navContainer"></div>
     <script src="codeEditor.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -91,7 +83,7 @@
                 outputId: "output",
                 runButtonId: "run-button"
             });
-            editor.setValue(`//Skriv ut lite text när någon trycker på knappen\n\n//Ändra färg på knappen när man trycker`);
+            editor.setValue(`//Skriv ut lite text när någon trycker på knappen\n\n//Ändra färg på knappen när man trycker(knappen har id myButton)`);
 
         });
     </script>

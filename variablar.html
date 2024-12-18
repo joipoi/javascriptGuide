@@ -34,38 +34,38 @@
         
         <h2 id="skapa-en-variabel">Skapa en variabel</h2>
         <p>Här är ett exempel på att skapa en javascript variabel:</p>
-        <pre><code>let myNumber = 15;</code></pre>
+        <code>let myNumber = 15;</code>
         <p>I detta exempel är namnet <code>"myNumber"</code> och datan är 15. Typen är nummer vilket brukar kallas int, men vi behöver inte säga typen i javascript, 
-                vi använder <strong>var</strong> istället.</p>
+                vi använder <strong>let</strong> istället.</p>
         
         <h2 id="variabel-namn">Variabel namn</h2>
         <p>Det är bra att veta vad man kan ge en variabel för namn. Namnet kan innehålla bokstäver, siffror, understreck, och dollartecken, men kan inte börja på en siffra.
                      Det finns också vissa namn som javascript redan använder så du kan inte använda dem, ett exempel på detta är var</p>
         <p>Exempel på korrekta variabel namn:</p>
-        <ul>
-            <li>mittnummer</li>
-            <li>myVariable123</li>
-            <li>this$is$a$var</li>
-            <li>_aVariabel</li>
-        </ul>
+<pre>
+mittnummer
+myVariable123 
+this$is$a$var 
+_aVariabel 
+</pre>
         <p>Exempel på felaktiga variabel namn:</p>
-        <ul>
-            <li>123myVariabel</li>
-            <li>var</li>
-            <li>15</li>
-        </ul>
+<pre>
+123myVariabel
+var
+15
+</pre>
         
         <h2 id="anvanda-en-variabel">Använda en variabel</h2>
         <p>När du har skapat en variabel kan du sedan använda den med hjälp av namnet. Om vi nu ville skriva ut vårt nummer till konsolen kan vi göra så här:</p>
-        <pre><code>console.log(myNumber);</code></pre>
+        <code>console.log(myNumber);</code>
         <p>Vi kommer till mer sätt att använda variabler i senare kapitel.</p>
         
         <h2 id="andra-en-variabel">Ändra en variabel</h2>
         <p>Om du har skapat en variabel och sedan vill ändra den kan det se ut så här:</p>
-        <pre><code>myNumber = 10;</code></pre>
+        <code>myNumber = 10;</code>
         <p>När variabeln redan finns behöver man inte använda <strong>var</strong> ordet, man behöver bara namnet och den nya datan.</p>
         <p>Eftersom javascript inte använder typer på samma sätt som andra språk kan du även ändra din variabel till en helt ny typ så här:</p>
-        <pre><code>myNumber = "Nu är jag text"</code></pre>
+        <code>myNumber = "Nu är jag text"</code>
         
         <h2 id="variabel-typer">Variabel typer</h2>
         <p>Nu vet du att javascript inte kräver att du skriver typen men alla variabler har fortfarande en typ som javascript håller koll på, den typen bestämmer javascript själv baserat på hur datan ser ut.</p>
@@ -75,19 +75,19 @@
         <p>Int är kort för Integer vilket är heltal på engelska. Alla heltal upp till 2147483647 räknas som int. Negativa tal är också int.
                                      Tal som inte är heltal är inte int, de är en annan typ som kallas float.</p>
         <p>Exempel:</p>
-        <pre><code>let myInt = 20;</code></pre>
+        <code>let myInt = 20;</code>
         
         <h3 id="string">String</h3>
         <p>För att någonting ska bli en string måste det vara inom citattecken <code>"Detta är en string"</code>. Du kan även lägga siffor inom citattecken och så blir det en string istället för en int.
                                      Alla tecken inom  citattecken blir en string, inte bara bokstäver.</p>
         <p>Exempel:</p>
-        <pre><code>let myString = "string text här, 123!";</code></pre>
+        <code>let myString = "string text här, 123!";</code>
         
         <h3 id="boolean">Boolean</h3>
         <p>Detta är en variabel som bara kan ha ett av två värde, true(sant) eller false(falskt). 
                                         Detta kan vara bra att för kod brukar ofta kolla om någonting är sant eller falskt.</p>
         <p>Exempel:</p>
-        <pre><code>let isThisTrue = true;</code></pre>
+        <code>let isThisTrue = true;</code>
 
         <h2 id="extra">Frivillig extra läsning</h2>
         <p>Här kan du gå djupare in i detta kapitlet om du vill:</p>
@@ -110,6 +110,8 @@
 <button id="run-button">Run Code</button>
 <div id="output"></div>
 </main>
+<div id="navContainer"></div>
+
 
 <script src="codeEditor.js"></script>
 <script>
@@ -123,17 +125,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
         
-<nav>
-    <a href="intro.html">Intro</a> 
-    <a href="variablar.html">Variablar</a> 
-    <a href="funktioner.html">Funktioner</a> 
-    <a href="integer.html">Integer</a>
-    <a href="string.html">String</a>
-    <a href="if-else.html">If Else</a>
-    <a href="loops.html">Loops</a>
-    <a href="html.html">HTML</a>
-    <a href="events.html">Events</a>
-  </nav>
 </body>
 </html>
 

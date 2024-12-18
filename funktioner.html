@@ -14,7 +14,6 @@
     
     <main>
         <h1>Funktioner</h1>
-
         <ul>
             <li><a href="#vad">Vad är en funktion?</a></li>
             <li><a href="#skapa">Skapa en funktion</a></li>
@@ -23,7 +22,6 @@
             <li><a href="#standard">Javascript standard funktioner</a></li>
             <li><a href="#extra">Frivillig extra läsning</a></li>
             <li><a href="#testa">Testa själv</a></li>
-     
         </ul>
 
         <h2 id="vad">Vad är en funktion?</h2>
@@ -34,11 +32,12 @@
         <h2 id="skapa">Skapa en funktion</h2>
         
         <p>Här är ett exempel på att skapa en javascript funktion som adderar 10 till ett nummer:</p>
-        <code>function addTen(myNumber) {
-           <br> let myResult = myNumber + 10;
-            <br>return myResult;
-        <br>}
-        </code>
+        <pre>
+function addTen(myNumber) {
+    let myResult = myNumber + 10;
+    return myResult;
+}
+</pre>
         <p>I detta exempel så är <b>myNumber</b> den data som funktionen tar in och <b>myResult</b> är den data som skickas ut. Man använder retur för att säga vad som ska skickas ut eller som "returneras".
           <br>  All kod i en funktion är inom dessa tecken som kallas “curly brackets”: <b>{kod här}</b>. </p>
 
@@ -57,10 +56,11 @@
 
         <p>Den data som skickas till en funktion kallas antingen parameter eller argument. En funktion kan ha flera parameters/arguments. I vårt exempel ovan så är myNumber vår parameter. 
            <br> Du säger hur många parameter en funktion ska ha när du skapar den, du ger dem namn med ett komma mellan varje, så här:</p>
-        <code>Function myFunc(param1, param2, param3){
-            <br>Code here
-            <br>}
-        </code>
+<pre>
+Function myFunc(param1, param2, param3){
+    Code here
+}
+</pre>
         <p>När du sedan vill använda funktionen så behöver du ha med lika många paramter som du hade när du skapade den. Så för att använda myfunc så kan du skriva</p>
         <code>myFunc(15, 30, 45);</code>  
         <p>Då kommer param1 ha värdet 15, param2 ha värdet 30 och param3 ha värdet 45.</p>  
@@ -95,20 +95,9 @@
 </ol>
         <textarea id="code-editor"></textarea>
         <button id="run-button">Run Code</button>
-        <div id="output"></div>
     </main>
     <br>
-    <nav>
-        <a href="intro.html">Intro</a> 
-        <a href="variablar.html">Variablar</a> 
-        <a href="funktioner.html">Funktioner</a> 
-        <a href="integer.html">Integer</a>
-        <a href="string.html">String</a>
-        <a href="if-else.html">If Else</a>
-        <a href="loops.html">Loops</a>
-        <a href="html.html">HTML</a>
-        <a href="events.html">Events</a>
-      </nav>
+    <div id="navContainer"></div>
 
     <script src="codeEditor.js"></script>
     <script>

@@ -27,9 +27,10 @@
  
         <h2 id="vad">Vad är en array</h2>
         <p>En array är en variabel typ, det är en variabel som istället för att hålla ett värde, håller en lista av värde. Här är två exempel på hur en array kan se ut i javascript:</p>
-        <code>let fruits = [“äpple”, “apelsin”, “päron”];
-            <br>let numbers = [5, 10, 15, 20];
-            </code>
+<pre>
+let fruits = [“äpple”, “apelsin”, “päron”];
+let numbers = [5, 10, 15, 20];
+</pre>
         <p>Alla värde i en array är inom fyrkantiga parenteser [] och det är ett komma mellan varje. 
             Du kan använda vilka variabeltyper som helst i din array, sträng, int och boolean fungerar alla bra.
             </p>
@@ -38,8 +39,10 @@
         <p>Alla värden i en array har en position, den börjar på 0 och går upp en i taget. I vår fruits array ovan så hade det blivit: äpple 0, apelsin 1, päron 2. Det kan skapa förvirring  att positionen börjar på 0 istället för 1, detta är något du måste komma ihåg, det är lätt att glömma.
             Du kan använda denna position för att få värdet, på detta sätt:
             </p>
-        <code>console.log(fruits[0]); //skriver ut äpple
-            <br>console.log(fruits[2]); //skriver ut päron</code>
+<pre>
+console.log(fruits[0]); //skriver ut äpple
+console.log(fruits[2]); //skriver ut päron
+</pre>
         <p>Det är vanligt att du vill gå igenom alla värde i en array och göra något med varje, detta kommer du lära dig om i nästa kapitel “Loops”.
             Du kan ändra värde i en array på samma sätt som en variabel:
             </p>
@@ -56,10 +59,11 @@
         <p>Precis som med strängar så kan du använda length för att få längden på en array. Detta är igen inte en funktion, det är en property, men du har inte lärt dig om property än.
             Du kan använda detta om du till exempel vill skriva ut det sista värdet i din array. Men kom ihåg att positioner börjar på 0 vilket gör det svårare, se här:
             </p>
-        <code>Let fruits = ["äpple", "päron"];
-           <br> console.log(fruits.length); //skriver ut 2
-           <br> console.log(fruits[fruits.length]); //Ger ett felmedelande
-        </code>
+<pre>
+Let fruits = ["äpple", "päron"];
+console.log(fruits.length); //skriver ut 2
+console.log(fruits[fruits.length]); //Ger ett felmedelande
+</pre>
         <p>I din fruits array här så är äpple 0 och päron 1. Position 2 finns inte, så det blir fel om du försöker skriva ut den. Det du behöver göra är att ta en mindre än längden, då får du sista värdet:</p>
         <code>console.log(fruits[fruits.length-1]);</code>
 
@@ -86,17 +90,7 @@
         <div id="output"></div>
     </main>
     <br>
-    <nav>
-        <a href="intro.html">Intro</a> 
-        <a href="variablar.html">Variablar</a> 
-        <a href="funktioner.html">Funktioner</a> 
-        <a href="integer.html">Integer</a>
-        <a href="string.html">String</a>
-        <a href="if-else.html">If Else</a>
-        <a href="loops.html">Loops</a>
-        <a href="html.html">HTML</a>
-        <a href="events.html">Events</a>
-      </nav>
+   <div id="navContainer"></div>
 
     <script src="codeEditor.js"></script>
     <script>
